@@ -1,24 +1,25 @@
 .global {
-    position: absolute;
+    position: relative;
     top: 25%;
-    left: 30%;
+    left: 25%;
     width: 40%;
     height: 50%;
-}
-
-form {
     background-color: #1e90ff;
-    border: 3px solid #ff0000;
+    border: 3px solid #000000;
     border-radius: 1em;
     margin: 5%;
     padding: 1em;
 }
 
-label {
+
+label, table {
     font-weight: bold;
     font-size: 14pt;
     font-family: Arial, sans-serif;
     color: #000000;
+}
+
+label {
     text-decoration: underline;
 }
 
@@ -27,7 +28,7 @@ h2 {
     font-style: italic;
     font-size: 22pt;
     font-family: Verdana, sans-serif;
-    color: #008000;
+    color: #000000;
 }
 
 label {
@@ -42,4 +43,148 @@ p {
 
 .button {
     padding: 3px;
+}
+
+body {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #cfcfcf;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+a {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.6em;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.menu {
+    position: relative;
+    margin-top: -1.4em;
+    width: 100%;
+    height: 4.7em;
+}
+
+.menu ul {
+    margin-left: -4em;
+    margin-top: -1.7em;
+}
+
+.menu li {
+    float: left;
+    text-align: center;
+    list-style: none;
+    width: 16.6573762893676%;
+    margin: 1px 0;
+    padding: 1.5em;
+    background-color: #000000;
+    border-width: 0.1em 0 0 0.05em;
+    border-color: #cfcfcf;
+    border-style: solid;
+    display: inline-block;
+}
+
+.menu li:first-child {
+    border-left-width: 0;
+}
+
+.menu li:first-child:hover {
+    border-left: 0.1em #000000 solid;
+}
+
+.menu li:last-child:hover {
+    border-right: 0.1em #000000 solid;
+}
+
+.menu li:hover, .menu li.active {
+    background-color: #00acec;
+    border-bottom: 0.1em #000000 solid;
+}
+
+.menu li a:hover {
+    color: #000000;
+}
+
+.content {
+    margin: auto;
+}
+
+#about_gremio {
+    margin: 4% 15%;
+    max-width: 70%;
+}
+
+.footer {
+    margin: 5% auto 5% auto;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1228px) {
+    .container {
+        padding: 0 4.4em 0 4.4em;
+    }
+    .menu li {
+        height: 63px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .menu li {
+        height: 5.6em;
+        font-size: 0.9em;
+    }
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }

@@ -1,25 +1,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Trabalho Individual 01</title>
-    <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
-    <script src="/javaScript/validations.js" type="text/javascript"></script>
-</head>
+<%@include file="header.jsp"%>
 
-<body>
+<h2>Cadastro de Jogadores</h2>
 <div class="global">
-
-    <h2>Cadastro de Jogadores</h2>
-    <form action="Processing" method="post" onsubmit="return requiredField()">
+    <form action="ProcessingInsertPlayer" method="post" onsubmit="return requiredField()">
         <label for="name">Nome:</label>
         <input type="text" name="name" id="name" maxlength="45" onchange="nameValidation()">
         <br><br>
         <label for="team">Time:</label>
         <select name="team" id="team" onchange="teamValidation()">
             <option value="empty_team">--Selecione o time--</option>
-            <option value="Grêmio">Grêmio</option>
+            <option value="Gremio">Grêmio</option>
             <option value="Internacional">Internacional</option>
-            <option value="São Paulo">São Paulo</option>
+            <option value="Sao Paulo">São Paulo</option>
             <option value="Fluminense">Fluminense</option>
         </select>
         <br><br>
@@ -36,5 +29,4 @@
         <input class="button" type="reset" value="Limpar" style="margin-left: 20px">
     </form>
 </div>
-</body>
-</html>
+<%@include file="footer.jsp"%>
